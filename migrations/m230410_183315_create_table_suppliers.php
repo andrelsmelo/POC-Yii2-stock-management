@@ -21,6 +21,9 @@ class m230410_183315_create_table_suppliers extends Migration
                 'razao_social' => $this->string()->notNull(),
                 'cep' => $this->string(9)->notNull(),
                 'phone' => $this->string(14)->notNull(),
+                'created_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP'),
+                'updated_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
+                'deleted_at' => $this->timestamp()->null(),
             ]
         );
 

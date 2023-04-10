@@ -15,6 +15,8 @@ class m230410_183422_create_table_stock extends Migration
         $this->createTable('stock', [
             'product_id' => $this->integer()->notNull(),
             'amount' => $this->integer()->notNull(),
+            'created_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP'),
+            'updated_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
         ]);
 
         $this->addPrimaryKey('pk-stock', 'stock', ['product_id']);

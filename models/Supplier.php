@@ -26,4 +26,21 @@ class Supplier extends ActiveRecord
     {
         return $this->hasMany(Product::class, ['supplier_id' => 'id']);
     }
+
+    public function softDelete()
+    {
+        $this->deleted_at = date('Y-m-d H:i:s');
+        return $this->save(false, ['deleted_at']);
+    }
+
+    public function delete()
+    {
+        $this->softDelete();
+        return true;
+    }
+
+    public static function find()
+    {
+        return parent::find()->andWhere(['deleted_at' => null]);
+    }
 }

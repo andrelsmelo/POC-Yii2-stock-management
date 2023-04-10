@@ -36,4 +36,21 @@ class Product extends ActiveRecord
     {
         return $this->hasOne(Stock::class, ['product_id' => 'id']);
     }
+
+    public function softDelete()
+    {
+        $this->deleted_at = date('Y-m-d H:i:s');
+        return $this->save(false, ['deleted_at']);
+    }
+
+    public function delete()
+    {
+        $this->softDelete();
+        return true;
+    }
+
+    public static function find()
+    {
+        return parent::find()->andWhere(['deleted_at' => null]);
+    }
 }

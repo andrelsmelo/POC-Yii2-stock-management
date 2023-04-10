@@ -82,3 +82,19 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.product-index {
+    text-align: center;
+}
+
+.supplier-index {
+    text-align: center;
+}
+
+.stock-index {
+    text-align: center;
+}
+
+.category-index {
+    text-align: center;
+}

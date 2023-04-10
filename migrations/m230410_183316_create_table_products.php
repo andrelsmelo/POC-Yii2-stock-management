@@ -19,6 +19,9 @@ class m230410_183316_create_table_products extends Migration
             'category_id' => $this->integer()->notNull(),
             'price' => $this->decimal(10, 2)->notNull(),
             'supplier_id' => $this->integer()->notNull(),
+            'created_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP'),
+            'updated_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
+            'deleted_at' => $this->timestamp()->null(),
         ]);
 
         $this->addForeignKey(

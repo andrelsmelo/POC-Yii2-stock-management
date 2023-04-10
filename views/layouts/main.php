@@ -40,10 +40,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Categories', 'url' => ['category/index']],
-            ['label' => 'Suppliers', 'url' => ['/supplier/index']],
-            ['label' => 'Stock', 'url' => ['/stock/index']],
-            ['label' => 'Products', 'url' => ['/product/index']],
+            ['label' => 'Categorias', 'url' => ['category/index']],
+            ['label' => 'Fornecedores', 'url' => ['/supplier/index']],
+            ['label' => 'Estoque', 'url' => ['/stock/index']],
+            ['label' => 'Produtos', 'url' => ['/product/index']],
         ]
     ]);
     NavBar::end();
