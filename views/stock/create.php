@@ -2,8 +2,8 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Stock */
+/** @var yii\web\View $this*/
+/** @var app\models\Stock $model */
 
 $this->title = 'Create Stock';
 $this->params['breadcrumbs'][] = ['label' => 'Stocks', 'url' => ['index']];

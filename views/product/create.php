@@ -2,8 +2,8 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Product */
+/** @var yii\web\View $this*/
+/** @var app\models\Product $model */
 
 $this->title = 'Novo produto';
 $this->params['breadcrumbs'][] = ['label' => 'Produtos', 'url' => ['index']];

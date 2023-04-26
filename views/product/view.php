@@ -3,8 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Product */
+/** @var yii\web\View $this*/
+/** @var app\models\Product $model */
 
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Produtos', 'url' => ['index']];

@@ -6,9 +6,11 @@ use app\models\Category;
 use app\models\Supplier;
 use yii\helpers\ArrayHelper;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Product */
-/* @var $form yii\widgets\ActiveForm */
+
+/** @var yii\web\View $this*/
+/** @var app\models\Product $model */
+/** @var yii\widgets\ActiveForm $form */
+
 ?>
 
 <div class="product-form">

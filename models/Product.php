@@ -6,6 +6,9 @@ use yii\db\ActiveRecord;
 
 class Product extends ActiveRecord
 {
+
+    public $deleted_at;
+
     public static function tableName()
     {
         return 'products';

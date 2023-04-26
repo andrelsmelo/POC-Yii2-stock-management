@@ -1,0 +1,11 @@
+includes:
+	- vendor/proget-hq/phpstan-yii2/extension.neon
+parameters:
+    level: 1
+    paths:
+        - controllers
+        - models
+        - views
+        - assets
+    yii2:
+        config_path: %rootDir%/../../../config/__autocomplete.php

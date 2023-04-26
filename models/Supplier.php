@@ -6,6 +6,9 @@ use yii\db\ActiveRecord;
 
 class Supplier extends ActiveRecord
 {
+
+    public $deleted_at;
+    
     public static function tableName()
     {
         return 'suppliers';

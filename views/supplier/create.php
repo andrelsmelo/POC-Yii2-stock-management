@@ -2,8 +2,8 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Supplier */
+/** @var yii\web\View $this*/
+/** @var app\models\Supplier $model */
 
 $this->title = 'Novo Fornecedor';
 $this->params['breadcrumbs'][] = ['label' => 'Fornecedor', 'url' => ['index']];

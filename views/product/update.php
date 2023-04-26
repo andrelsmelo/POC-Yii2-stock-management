@@ -2,15 +2,15 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Category */
+/** @var yii\web\View $this*/
+/** @var app\models\Product $model */
 
 $this->title = 'Atualizar Produto: ' . $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Produtos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Atualizar';
 ?>
-<div class="category-update">
+<div class="product-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
